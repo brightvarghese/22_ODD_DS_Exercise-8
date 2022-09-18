@@ -10,7 +10,7 @@ Given a list of patients which contains Blood Glucose details. Create a Hashing 
 The data of every patient details is a list of integer and string.
 
 **Input Format**</br>
-First line contains integer which represents the size of hashtable.
+First line contains integer which represents the size of hashtable.</br>
 Second line contains a collection of lists, where each list conatins the blood glucose level and name of patient.
 
 ## Sample Input - 1
