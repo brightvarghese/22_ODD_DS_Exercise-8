@@ -9,6 +9,10 @@ Given a list of patients which contains Blood Glucose details. Create a Hashing 
 # Constraints
 The data of every patient details is a list of integer and string.
 
+**Input Format**</br>
+First line contains integer which represents the size of hashtable.
+Second line contains a collection of lists, where each list conatins the blood glucose level and name of patient.
+
 ## Sample Input - 1
 ```
 3
@@ -20,6 +24,15 @@ The data of every patient details is a list of integer and string.
 1 --> 'Scooby' 
 2 --> 'Mickey' --> 'Donald'
 ```
+*Explaination*</br>
+0, 1 and 2 are indices.</br>
+Tom's blood glucose level is 150. The Hashing(150) returns 0 (150 % 3 = 0). So it is stored in 0<sup>th</sup> index.</br>
+Jerry's blood glucose level is 150. The Hashing(150) returns 0 (150 % 3 = 0). It is chained on 0<sup>th</sup> index.</br>
+Mickey's blood glucose level is 131. The Hashing(131) returns 2 (131 % 3 = 2). So it is stored in 2<sup>nd</sup> index.</br>
+Donald's blood glucose level is 122. The Hashing(122) returns 2 (122 % 3 = 2). So it is chained on 2<sup>nd</sup> index.</br>
+Ben's blood glucose level is 123. The Hashing(123) returns 0 (150 % 3 = 0). It is chained on 0<sup>th</sup> index.</br>
+Scooby's blood glucose level is 130. The Hashing(130) returns 2 (130 % 3 = 1). So it is stored in 1<sup>st</sup> index.</br>
+
 ## Sample Input - 2
 ```
 10
